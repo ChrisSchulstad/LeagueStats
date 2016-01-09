@@ -28,7 +28,7 @@ app.controller('LoginController', ["$scope", '$state', function($scope, $state){
   $scope.authFB = authFB;
 
   $scope.redirectToHome = function(){
-		$state.go('homePage');
+		$state.go('loginPage');
 	}
 
   mainRef.onAuth(function(authData){
